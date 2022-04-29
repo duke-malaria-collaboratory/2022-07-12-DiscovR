@@ -44,7 +44,7 @@ displayed if the 'eventbrite' field in the header is not set.
 
 You can find the application for the workshop [here](https://forms.gle/ibUES5nxmDGukLsZA). 
 
-<strong>No prior experience in R is required!</strong>
+<strong>No prior experience in R is required!</strong> R setup and installation help will also be provided. 
 
 <h2 id="general">General Information</h2>
 
@@ -224,7 +224,7 @@ CODE OF CONDUCT
 <h2 id="code-of-conduct">Code of Conduct</h2>
 
 <p>
-Everyone who participates in the DiscoveR Workshop is required to conform to the Carpentries <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Code of Conduct</a>. 
+Everyone who participates in the DiscoveR Workshop is required to abide by the Carpentries <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Code of Conduct</a>. 
 
 {% comment %}
 SURVEYS - DO NOT EDIT SURVEY LINKS
