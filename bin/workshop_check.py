@@ -192,7 +192,7 @@ def check_instructors(instructors):
     return isinstance(instructors, list) and len(instructors) > 0
 
 
-def check_helpers(helpers):
+def check_helpers(facilitator):
     """
     'helper' must be a comma-separated list of quoted names,
     e.g. ['First name', 'Second name', ...'].  The list may be empty.
@@ -200,7 +200,7 @@ def check_helpers(helpers):
     """
 
     # YAML automatically loads list-like strings as lists.
-    return isinstance(helpers, list) and len(helpers) >= 0
+    return isinstance(facilitator, list) and len(facilitator) >= 0
 
 
 @look_for_fixme
@@ -293,7 +293,7 @@ HANDLERS = {
                    'instructor list isn\'t a valid list of format ' +
                    '["First instructor", "Second instructor",..]'),
 
-    'helper':     (True, check_helpers,
+    'facilitator':     (True, check_helpers,
                    'helper list isn\'t a valid list of format ' +
                    '["First helper", "Second helper",..]'),
 
