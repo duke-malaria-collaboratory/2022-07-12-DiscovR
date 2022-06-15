@@ -7,8 +7,8 @@ venue: "Noble Hotel, Eldoret, Kenya"        # brief name of the institution that
 address: "Kapsoya, Off Nairobi Road Off Eldoret - Nairobi Highway, Eldoret, Kenya"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
 country: "ke"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) for the institution that hosts the workshop
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the workshop
-latitude: "0.5128478452833125"        # decimal latitude of workshop venue (use https://www.latlong.net/)
-longitude: "35.299492938080476"       # decimal longitude of the workshop venue (use https://www.latlong.net)
+latitude: "0.5120056196818276"        # decimal latitude of workshop venue (use https://www.latlong.net/)
+longitude: "35.299315871499154"       # decimal longitude of the workshop venue (use https://www.latlong.net)
 humandate: "July 12-14, 2022"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "9:00 am - 4:30 pm"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
 startdate: 2022-07-12      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
@@ -51,7 +51,7 @@ You can find the application for the workshop [here](https://forms.gle/ibUES5nxm
 
 <h2 id="general">General Information</h2>
 
-<strong>No prior experience in R is required!</strong> R setup and installation help will also be provided.
+<strong>No prior experience in R is required!</strong> R setup and installation help will also be provided as needed.
 
 {% comment %}
 INTRODUCTION
@@ -65,10 +65,6 @@ the pitch.
 {% include dc/intro.html %}
 {% elsif site.carpentry == "lc" %}
 {% include lc/intro.html %}
-{% endif %}
-
-{% if site.pilot %}
-This is a pilot workshop, testing out a lesson that is still under development. The lesson authors would appreciate any feedback you can give them about the lesson content and suggestions for how it could be further improved.
 {% endif %}
 
 {% comment %}
@@ -250,6 +246,16 @@ We will use this <a href="{{ page.collaborative_notes }}">collaborative document
 </p>
 <hr/>
 {% endif %}
+
+<h2 id="curriculum">Curriculum</h2>
+
+<p>
+We will use the <a href="{{ page.curriculum_site }}">DiscovR curriculum</a> for the workshop. 
+{% if site.pilot %}
+This is a pilot workshop, testing out a lesson that is still under development. The lesson authors would appreciate any feedback you can give them about the lesson content and suggestions for how it could be further improved.
+{% endif %}
+</p>
+<hr/>
 
 {% comment %}
 SURVEYS - DO NOT EDIT SURVEY LINKS
