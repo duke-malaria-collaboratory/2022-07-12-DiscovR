@@ -3,12 +3,12 @@ layout: workshop      # DON'T CHANGE THIS.
 # More detailed instructions (including how to fill these variables for an
 # online workshop) are available at
 # https://carpentries.github.io/workshop-template/customization/index.html
-venue: "Eldoret, Kenya"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
-address: "TBD"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
+venue: "Noble Hotel, Eldoret, Kenya"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
+address: "Kapsoya, Off Nairobi Road Off Eldoret - Nairobi Highway, Eldoret, Kenya"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
 country: "ke"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) for the institution that hosts the workshop
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the workshop
-latitude: "TBD"        # decimal latitude of workshop venue (use https://www.latlong.net/)
-longitude: "TBD"       # decimal longitude of the workshop venue (use https://www.latlong.net)
+latitude: "0.5128478452833125"        # decimal latitude of workshop venue (use https://www.latlong.net/)
+longitude: "35.299492938080476"       # decimal longitude of the workshop venue (use https://www.latlong.net)
 humandate: "July 12-14, 2022"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "8:00 am - 4:30 pm"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
 startdate: 2022-07-12      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
@@ -16,7 +16,7 @@ enddate: 2022-07-14        # machine-readable end date for the workshop in YYYY-
 instructor: ["Christine Markwalter", "Zena Lapp", "Erica Zeno"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 facilitator: ["Emmah Kimachas"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["christine.markwalter@duke.edu","zena.lapp@duke.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-collaborative_notes:  # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
+collaborative_notes:  https://docs.google.com/document/d/1G3tg1BuXpKCCcUE3m87WqZjEfZauioyARxAyMyG_h2c/edit?usp=sharing # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
@@ -226,7 +226,27 @@ CODE OF CONDUCT
 <h2 id="code-of-conduct">Code of Conduct</h2>
 
 <p>
-Everyone who participates in the DiscoveR Workshop is required to abide by the Carpentries <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Code of Conduct</a>. 
+Everyone who participates in Carpentries activities is required to conform to the <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Code of Conduct</a>. This document also outlines how to report an incident if needed.
+</p>
+
+<p class="text-center">
+  <a href="https://goo.gl/forms/KoUfO53Za3apOuOK2">
+    <button type="button" class="btn btn-info">Report a Code of Conduct Incident</button>
+  </a>
+</p>
+<hr/>
+
+{% comment %}
+Collaborative Notes
+{% endcomment %}
+{% if page.collaborative_notes %}
+<h2 id="collaborative_notes">Collaborative Notes</h2>
+
+<p>
+We will use this <a href="{{ page.collaborative_notes }}">collaborative document</a> for chatting, taking notes, and sharing URLs and bits of code.
+</p>
+<hr/>
+{% endif %}
 
 {% comment %}
 SURVEYS - DO NOT EDIT SURVEY LINKS
@@ -234,8 +254,8 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
 <h2 id="surveys">Surveys</h2>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
 {% if site.carpentry == "incubator" %}
-<p><a href="https://forms.gle/jeKJ7mabP1ghraLj8">Pre-workshop Survey</a></p>
-<p><a href="https://forms.gle/CuBqenVho8SeMNUEA">Post-workshop Survey</a></p>
+<p><a href="{{ site.incubator_pre_survey }}">Pre-workshop Survey</a></p>
+<p><a href="{{ site.incubator_post_survey }}">Post-workshop Survey</a></p>
 {% elsif site.incubator_pre_survey or site.incubator_post_survey %}
 <div class="alert alert-danger">
 WARNING: you have defined custom pre- and/or post-survey links for
@@ -246,12 +266,11 @@ in `_config.yml` or, if this workshop is teaching a lesson in the Incubator,
 change the value of `carpentry` to `incubator`.
 </div>
 {% else %}
-<p><a href="https://forms.gle/jeKJ7mabP1ghraLj8">Pre-workshop Survey</a></p>
-<p><a href="https://forms.gle/CuBqenVho8SeMNUEA">Post-workshop Survey</a></p>
+<p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
+<p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
 {% endif %}
 
 <hr/>
-
 
 {% comment %}
 SCHEDULE
