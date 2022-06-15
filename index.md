@@ -51,6 +51,8 @@ You can find the application for the workshop [here](https://forms.gle/ibUES5nxm
 
 <h2 id="general">General Information</h2>
 
+<strong>No prior experience in R is required!</strong> R setup and installation help will also be provided.
+
 {% comment %}
 INTRODUCTION
 
