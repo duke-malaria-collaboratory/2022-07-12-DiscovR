@@ -40,12 +40,13 @@ displayed if the 'eventbrite' field in the header is not set.
 </iframe>
 {% endif %}
 
+{% comment %}
 <h2 id="general">Application</h2>
 
 You can find the application for the workshop [here](https://forms.gle/ibUES5nxmDGukLsZA). <strong>The application deadline is Monday May 30, 2022.</strong>
 
 <strong>No prior experience in R is required!</strong> R setup and installation help will also be provided. 
-
+{% endcomment %}
 
 
 <h2 id="general">General Information</h2>
