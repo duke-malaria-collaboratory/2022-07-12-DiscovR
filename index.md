@@ -250,7 +250,7 @@ We will use this <a href="{{ page.collaborative_notes }}">collaborative document
 <h2 id="curriculum">Curriculum</h2>
 
 <p>
-We will use the <a href="{{ page.curriculum_site }}">DiscovR curriculum</a> for the workshop. 
+We will use the <a href="{{ site.curriculum_site }}">DiscovR curriculum</a> for the workshop. 
 {% if site.pilot %}
 This is a pilot workshop, testing out a lesson that is still under development. The lesson authors would appreciate any feedback you can give them about the lesson content and suggestions for how it could be further improved.
 {% endif %}
